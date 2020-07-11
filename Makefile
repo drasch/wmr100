@@ -1,5 +1,5 @@
-CFLAGS += `pkg-config libhid --cflags` -pedantic -Wall -D_GNU_SOURCE
-LIBS += `pkg-config libhid --libs` -lpthread
+CFLAGS += `pkg-config hidapi-libusb --cflags` -pedantic -Wall -D_GNU_SOURCE
+LIBS += `pkg-config hidapi-libusb --libs` -lpthread
 
 wmr100: wmr100.c
 	cc ${CFLAGS} -o wmr100 wmr100.c ${LIBS}
