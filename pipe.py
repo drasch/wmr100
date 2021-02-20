@@ -8,6 +8,8 @@ import paho.mqtt.client as mqtt
 
 client = mqtt.Client()
 client.connect("fpp1.rbhome")
+client.loop_start()
+
 
 
 def pub(name, number, type):
